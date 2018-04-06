@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet">
   <title>Bootstrap Sandbox</title>
 </head>
 <body>
@@ -82,72 +82,134 @@
   <div class="container">
     <!--########################START HERE#########################-->
 
+    <h3><a data-toggle="modal" data-target="#specialCharacters"
+      onClick="generateModal('Display the following characters: < > &quot; \' &amp;', '&lt; &amp;lt; || &gt; &amp;gt;')">
+      Display the following characters: <span class="blue-text">&lt;  &gt;  &quot;  &apos;  &amp;</span></h3><br>
+
     <!-- HEADINGS -->
-    <h1>Heading One <small class="text-muted">Subtext</small></h1>
-    <h2>Heading Two</h2>
-    <h3>Heading Three</h3>
-    <h4 class="h2">Heading Four</h4>
-    <h5>Heading Five</h5>
-    <h6>Heading Six</h6>
+    <h1><a data-toggle="modal" data-target="#generateModal" onClick="generateModal('Heading One', '<h1>Heading One <small class=&quot;text-muted&quot;>Subtext</small></h1>')">Heading One <small class="text-muted">Subtext</small></a></h1>
+    <h2><a data-toggle="modal" data-target="#generateModal" onClick="generateModal('Heading Two', '<h2>Heading Two</h2>')">Heading Two</a></h2>
+    <h4 class="h2"><a data-toggle="modal" data-target="#generateModal" onClick="generateModal('Heading Two', '<h4 class=&quot;h2&quot;>Heading Two</h4>')">Heading Two</a></h4>
+    <h3><a data-toggle="modal" data-target="#generateModal" onClick="generateModal('Heading Three', '<h3>Heading Three</h3>')">Heading Three</a></h3>
+    <h4><a data-toggle="modal" data-target="#generateModal" onClick="generateModal('Heading Four', '<h4>Heading Four</h4>')">Heading Four</a></h4>
+    <h5><a data-toggle="modal" data-target="#generateModal" onClick="generateModal('Heading Five', '<h5>Heading Five</h5>')">Heading Five</a></h5>
+    <h6><a data-toggle="modal" data-target="#generateModal" onClick="generateModal('Heading Six', '<h6>Heading Six</h6>')">Heading Six</a></h6>
 
     <!-- DISPLAY CLASSES -->
-    <h1 class="display-1">Display Heading 1</h1>
-    <h1 class="display-2">Display Heading 2</h1>
-    <h1 class="display-3">Display Heading 3</h1>
-    <h1 class="display-4">Display Heading 4</h1>
+    <h1 class="display-1"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Display Heading One', '<h1 class=&quot;display-1&quot;>Display Heading One</h1>')">Display Heading 1</a></h1>
+    <h1 class="display-2"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Display Heading Two', '<h1 class=&quot;display-2&quot;>Display Heading Two</h1>')">Display Heading 2</a></h1>
+    <h1 class="display-3"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Display Heading Three', '<h1 class=&quot;display-3&quot;>Display Heading Three</h1>')">Display Heading 3</a></h1>
+    <h1 class="display-4"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Display Heading Four', '<h1 class=&quot;display-4&quot;>Display Heading Four</h1>')">Display Heading 4</a></h1>
 
     <!-- PARAGRAPHS -->
-    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolore repellendus veniam consequatur vero numquam voluptatem quam ab expedita eum, ipsam? Necessitatibus dicta quaerat, vitae dolorum, dolor autem reiciendis sapiente.</p>
-
     <!-- LEAD -->
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolore repellendus veniam consequatur vero numquam voluptatem quam ab expedita eum, ipsam? Necessitatibus dicta quaerat, vitae dolorum, dolor autem reiciendis sapiente.</p>
+    <p class="lead"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Lead Paragraph', '<p class=&quot;lead&quot;>Lead Paragraph</p>')">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolore repellendus veniam consequatur vero numquam voluptatem quam ab
+      expedita eum, ipsam? Necessitatibus dicta quaerat, vitae dolorum, dolor autem reiciendis sapiente.</a></p>
+
+    <p><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Paragraph', '<p>Paragraph</p>')">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolore repellendus veniam consequatur vero numquam voluptatem quam ab
+      expedita eum, ipsam? Necessitatibus dicta quaerat, vitae dolorum, dolor autem reiciendis sapiente.</a></p>
 
     <!-- STYLE CLASSES -->
-    <p class="font-weight-bold">Bold Text</p>
-    <p class="font-weight-normal">Normal Text</p>
-    <p class="font-italic">Italic Text</p>
+    <p class="font-weight-bold"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Bold Text', '<p class=&quot;font-weight-bold&quot;>Bold Text</p>')">Bold Text</a></p>
+    <p class="font-weight-normal"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Normal Text', '<p class=&quot;font-weight-normal&quot;>Normal Text</p>')">Normal Text</a></p>
+    <p class="font-italic"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Italic Text', '<p class=&quot;font-italic&quot;>Italic Text</p>')">Italic Text</a></p>
 
     <!-- TEXT TRANSFORMS -->
-    <p class="text-lowercase">MAKE LOWERCASE</p>
-    <p class="text-uppercase">make uppercase</p>
-    <p class="text-capitalize">make capitalized</p>
+    <p class="text-lowercase"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Make Lowercase', '<p class=&quot;text-lowercase&quot;>MAKE LOWERCASE</p>')">MAKE LOWERCASE</a></p>
+    <p class="text-uppercase"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Make Uppercase', '<p class=&quot;text-uppercase&quot;>make uppercase</p>')">make uppercase</a></p>
+    <p class="text-capitalize"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Make Capitalized', '<p class=&quot;text-lowercase&quot;>make capitalized</p>')">make capitalized</a></p>
 
     <!-- BLOCKQUOTES -->
     <blockquote class="blockquote">
-      <p>This is a blockquote</p>
+      <p><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Blockquote', '<blockquote class=&quot;blockquote&quot;><p>This is a blockquote</p></blockquote>')">
+        This is a blockquote</a></p>
     </blockquote>
 
     <!-- BLOCKQUOTE RIGHT ALIGNED -->
     <blockquote class="blockquote text-right">
-      <p>This is a blockquote aligned right</p>
+      <p><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Blockquote Aligned Right',
+        '<blockquote class=&quot;blockquote text-right&quot;><p>This is a blockquote aligned right</p></blockquote>')">
+        This is a blockquote aligned right</a></p>
     </blockquote>
 
     <!-- BLOCKQUOTE WITH FOOTER -->
     <blockquote class="blockquote text-right">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+      <p><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Blockquote Aligned Right with Footer',
+        '<blockquote class=&quot;blockquote text-right&quot;><p>This is a blockquote aligned right</p>' +
+        '<footer class=&quot;blockquote-footer&quot;>Someone famous in <cite title=&quot;Source Title&quot;>Source Title</cite></footer></blockquote>')">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</a></p>
+        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
     </blockquote>
 
+
     <!-- LISTS -->
-    <ul class="list-unstyled">
+    <ul class="list-unstyled"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Unstyled Lists', '<ul class=&quot;list-unstyled&quot;> <li>item1</li> <li>item2</li> </ul>')">
       <li>Lorem ipsum dolor sit amet.</li>
       <li>Lorem ipsum dolor sit amet.</li>
       <li>Lorem ipsum dolor sit amet.</li>
-      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Lorem ipsum dolor sit amet.</li></a>
     </ul>
 
     <!-- INLINE LIST -->
-    <ul class="list-inline">
+    <ul class="list-inline"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Inline Lists', '<ul class=&quot;list-inline&quot;> <li class=&quot;list-inline-item&quot;>item1</li>' +
+        ' <li class=&quot;list-inline-item&quot;>item2</li> </ul>')">
       <li class="list-inline-item">Lorem ipsum</li>
       <li class="list-inline-item">Lorem ipsum </li>
-      <li class="list-inline-item">Lorem ipsum </li>
+      <li class="list-inline-item">Lorem ipsum </li></a>
     </ul>
   </div>
 
   <div style="margin-top:500px;"></div>
 
+  <!-- MODAL -->
+  <div id="specialCharacters" class="modal">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title font-weight-bold blue-text">Display the following characters: &lt;  &gt;  &quot;  &apos;  &amp;</h5>
+                  <button class="close" data-dismiss="modal"><span class="blue-text">&times;</span></button>
+              </div>
+              <div class="modal-body blue-grey-text font-weight-normal">
+                <pre><code><span class="black-text pln">                      &lt; &amp;lt;
+                      &gt; &amp;gt;
+                      " &amp;quot;
+                      ' &amp;apos;
+                      &amp; &amp;amp;</span></code></pre>
+              </div>
+              <div class="modal-footer">
+                  <button class="btn btn-primary" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <div include-html="htmlSnippet/generateModal.html"></div>
+  <script src="htmlSnippet/generateModal.js"></script>
+
+
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
 </body>
 </html>

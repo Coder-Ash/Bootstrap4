@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet">
   <title>Bootstrap Sandbox</title>
 </head>
 <body>
@@ -82,66 +83,96 @@
     <!--########################START HERE#########################-->
 
     <!-- JUSTIFY -->
-    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ad deleniti, placeat cumque, maiores fugiat tenetur ea voluptas voluptatem odio odit, dicta. Eaque reiciendis sed placeat omnis doloribus, corrupti eius.</p>
+    <p class="text-justify"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Justify Text', '<p class=&quot;text-justify&quot;>Justified Text</p>')">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ad deleniti, placeat cumque, maiores fugiat tenetur ea voluptas voluptatem odio odit, dicta. Eaque reiciendis sed placeat omnis doloribus, corrupti eius.</a></p>
 
     <br><br>
 
     <!-- ALIGNMENT -->
-    <p class="text-left">Text aligned left</p>
-    <p class="text-center">Text aligned center</p>
-    <p class="text-right">Text aligned right</p>
+    <p class="text-left"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Text Align Left', '<p class=&quot;text-left&quot;>Text Aligned Left </p>')">Text aligned left</a></p>
+    <p class="text-center"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Text Align Center', '<p class=&quot;text-center&quot;>Text Aligned Center</p>')">Text aligned center</a></p>
+    <p class="text-right"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Text Align Right', '<p class=&quot;text-right&quot;>Text Aligned Right</p>')">Text aligned right</a></p>
 
     <!-- RESPONSIVE ALIGN -->
-    <p class="text-sm-right">Right aligned on small or larger</p>
-    <p class="text-md-right">Right aligned on medium or larger</p>
-    <p class="text-lg-right">Right aligned on large or larger</p>
-    <p class="text-xl-right">Right aligned on xl or larger</p>
+    <p class="text-sm-right"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Responsive Text Align Right on Small or Wider Screens', '<p class=&quot;text-sm-right&quot;>Text </p>')"><span class="font-weight-bold">Responsive</span> Right aligned on small or wider</a></p>
+    <p class="text-md-right"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Responsive Text Align Right on Medium or Wider Screens', '<p class=&quot;text-md-right&quot;>Text </p>')"><span class="font-weight-bold">Responsive</span> Right aligned on medium or wider</a></p>
+    <p class="text-lg-right"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Responsive Text Align Right on Large or Wider Screens', '<p class=&quot;text-lg-right&quot;>Text </p>')"><span class="font-weight-bold">Responsive</span> Right aligned on large or wider</a></p>
+    <p class="text-xl-right"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Responsive Text Align Right on Xtra Large', '<p class=&quot;text-xl-right&quot;>Text </p>')"><span class="font-weight-bold">Responsive</span> Right aligned on xtra large</a></p>
 
-    <p class="text-sm-left text-right">Left aligned text on small or larger</p>
-    <p class="text-md-left text-right">Left aligned text on medium or larger</p>
-    <p class="text-lg-left text-right">Left aligned text on large or wider</p>
-    <p class="text-xl-left text-right">Left aligned text on extra large or wider</p>
+    <p class="text-sm-left"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Responsive Text Align left on Small or Wider Screens', '<p class=&quot;text-sm-left&quot;>Text </p>')"><span class="font-weight-bold">Responsive</span> left aligned on small or wider</a></p>
+    <p class="text-md-left"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Responsive Text Align left on Medium or Wider Screens', '<p class=&quot;text-md-left&quot;>Text </p>')"><span class="font-weight-bold">Responsive</span> left aligned on medium or wider</a></p>
+    <p class="text-lg-left"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Responsive Text Align left on Large or Wider Screens', '<p class=&quot;text-lg-left&quot;>Text </p>')"><span class="font-weight-bold">Responsive</span> left aligned on large or wider</a></p>
+    <p class="text-xl-left"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Responsive Text Align left on Xtra Large', '<p class=&quot;text-xl-left&quot;>Text </p>')"><span class="font-weight-bold">Responsive</span> left aligned on xtra large</a></p>
 
-    <p class="text-sm-center">Center aligned text on small or larger</p>
-    <p class="text-md-center">Center aligned text on medium or larger</p>
-    <p class="text-lg-center">Center aligned text on large or wider</p>
-    <p class="text-xl-center">Center aligned text on extra large or wider</p>
+    <p class="text-sm-center"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Responsive Text Align center on Small or Wider Screens', '<p class=&quot;text-sm-center&quot;>Text </p>')"><span class="font-weight-bold">Responsive</span> center aligned on small or wider</a></p>
+    <p class="text-md-center"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Responsive Text Align center on Medium or Wider Screens', '<p class=&quot;text-md-center&quot;>Text </p>')"><span class="font-weight-bold">Responsive</span> center aligned on medium or wider</a></p>
+    <p class="text-lg-center"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Responsive Text Align center on Large or Wider Screens', '<p class=&quot;text-lg-center&quot;>Text </p>')"><span class="font-weight-bold">Responsive</span> center aligned on large or wider</a></p>
+    <p class="text-xl-center"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Responsive Text Align center on Xtra Large', '<p class=&quot;text-xl-center&quot;>Text </p>')"><span class="font-weight-bold">Responsive</span> center aligned on xtra large</a></p>
 
     <br><br>
 
     <!-- VERTICAL ALIGNMENT -->
-    <span class="align-baseline">baseline</span>
-    <span class="align-top">top</span>
-    <span class="align-bottom">bottom</span>
-    <span class="align-middle">middle</span>
-    <span class="align-text-top">text-top</span>
-    <span class="align-text-bottom">text-bottom</span>
+    <span class="align-baseline"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Baseline Vertical Alignment', '<span class=&quot;align-baseline&quot;>Baseline</span>')">baseline</a></span>
+    <span class="align-top"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Top Vertical Alignment', '<span class=&quot;align-top&quot;>Top</span>')">top</a></span>
+    <span class="align-bottom"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Bottom Vertical Alignment', '<span class=&quot;align-bottom&quot;>Bottom</span>')">bottom</a></span>
+    <span class="align-middle"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Middle Vertical Alignment', '<span class=&quot;align-middle&quot;>Middle</span>')">middle</a></span>
+    <span class="align-text-top"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Text-Top Vertical Alignment', '<span class=&quot;align-text-top&quot;>Text Top</span>')">text-top</a></span>
+    <span class="align-text-bottom"<a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Text-Bottom Vertical Alignment', '<span class=&quot;align-text-bottom&quot;>Text Bottom</span>')">text-bottom</a></span>
 
     <br><br>
 
     <!-- TURN BLOCK TO INLINE -->
-    <h1 class="bg-success d-inline">Hello</h1> <!-- bg-success changes the background color to green since success is paired to green color -->
-    <h1 class="bg-info d-inline">Goodbye</h1> <!-- The green is now fixed to the element where as block is the entire line width -->
+    <h1 class="bg-success d-inline"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Turn Block to Inline', '<h1 class=&quot;d-inline&quot;>Text</h1>')">Hello</a></h1> <!-- bg-success changes the background color to green since success is paired to green color -->
+    <h1 class="bg-info d-inline"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Turn Block to Inline', '<h1 class=&quot;d-inline&quot;>Text</h1>')">Goodbye</a></h1> <!-- The green is now fixed to the element where as block is the entire line width -->
 
     <br><br>
 
     <!-- TURN INLINE TO BLOCK -->
-    <span class="bg-warning d-block">Block</span> <!-- The orange is now the entire line width where as inline is fixed to the element -->
+    <span class="bg-warning d-block"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Turn Inline to Block', '<span class=&quot;d-block&quot;>Text</span>')">Block</a></span> <!-- The orange is now the entire line width where as inline is fixed to the element -->
 
     <br><br>
 
     <!-- INLINE BLOCK -->
-    <div class="bg-info d-inline-block"> <!-- d-inline-block takes everything in the div and inlines them -->
+    <div class="bg-info d-inline-block"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Inline Block', '<div class=&quot;d-inline-block&quot;><h3>Hello</h3> This is inline</div>')"> <!-- d-inline-block takes everything in the div and inlines them -->
       <h3>Hello</h3>
-      This is inline
+      This is inline</a>
     </div>
-    <div class="bg-info d-inline-block">
+    <div class="bg-info d-inline-block"><a data-toggle="modal" data-target="#generateModal"
+      onClick="generateModal('Inline Block', '<div class=&quot;d-inline-block&quot;><h3>Hello</h3> This is inline</div>')"> <!-- d-inline-block takes everything in the div and inlines them -->
       <h3>Hello</h3>
-      This is inline
+      This is inline</a>
     </div>
   </div>
 
   <div style="margin-top:500px;"></div>
+
+  <div include-html="htmlSnippet/generateModal.html"></div>
+  <script src="htmlSnippet/generateModal.js"></script>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>

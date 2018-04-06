@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet">
     <title>Bootstrap Sandbox</title>
 </head>
 <body>
@@ -82,94 +83,136 @@
         <!--########################START HERE#########################-->
 
         <!-- MB MARGIN BOTTOM -->
-        <h1 class="bg-success mb-0">Margin Bottom 0</h1>
-        <h1 class="bg-primary mb-1">Margin Bottom 1</h1>
-        <h1 class="bg-secondary mb-2">Margin Bottom 2</h1>
-        <h1 class="bg-info mb-3">Margin Bottom 3</h1>
-        <h1 class="bg-warning mb-4">Margin Bottom 4</h1>
-        <h1 class="bg-danger mb-5">Margin Bottom 5</h1>
+        <h1 class="bg-success mb-0"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Margin Bottom 0', '<h1 class=&quot;mb-0&quot;>Margin Bottom 0</h1>')">Margin Bottom 0</a></h1>
+        <h1 class="bg-primary mb-1"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Margin Bottom 1', '<h1 class=&quot;mb-1&quot;>Margin Bottom 1</h1>')">Margin Bottom 1</a></h1>
+        <h1 class="bg-secondary mb-2"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Margin Bottom 2', '<h1 class=&quot;mb-2&quot;>Margin Bottom 2</h1>')">Margin Bottom 2</a></h1>
+        <h1 class="bg-info mb-3"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Margin Bottom 3', '<h1 class=&quot;mb-3&quot;>Margin Bottom 3</h1>')">Margin Bottom 3</a></h1>
+        <h1 class="bg-warning mb-4"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Margin Bottom 4', '<h1 class=&quot;mb-4&quot;>Margin Bottom 4</h1>')">Margin Bottom 4</a></h1>
+        <h1 class="bg-danger mb-5"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Margin Bottom 5', '<h1 class=&quot;mb-5&quot;>Margin Bottom 5</h1>')">Margin Bottom 5</a></h1>
 
         <br><br>
 
          <!-- MT MARGIN TOP -->
-        <h1 class="bg-success mt-0">Margin Top 0</h1>
-        <h1 class="bg-primary mt-1">Margin Top 1</h1>
-        <h1 class="bg-secondary mt-2">Margin Top 2</h1>
-        <h1 class="bg-info mt-3">Margin Top 3</h1>
-        <h1 class="bg-warning mt-4">Margin Top 4</h1>
-        <h1 class="bg-danger mt-5">Margin Top 5</h1>
+        <h1 class="bg-success mt-0"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Margin Top 0', '<h1 class=&quot;mt-0&quot;>Margin Top 0</h1>')">Margin Top 0</a></h1>
+        <h1 class="bg-primary mt-1"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Margin Top 1', '<h1 class=&quot;mt-1&quot;>Margin Top 1</h1>')">Margin Top 1</a></h1>
+        <h1 class="bg-secondary mt-2"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Margin Top 2', '<h1 class=&quot;mt-2&quot;>Margin Top 2</h1>')">Margin Top 2</a></h1>
+        <h1 class="bg-info mt-3"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Margin Top 3', '<h1 class=&quot;mt-3&quot;>Margin Top 3</h1>')">Margin Top 3</a></h1>
+        <h1 class="bg-warning mt-4"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Margin Top 4', '<h1 class=&quot;mt-4&quot;>Margin Top 4</h1>')">Margin Top 4</a></h1>
+        <h1 class="bg-danger mt-5"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Margin Top 5', '<h1 class=&quot;mt-5&quot;>Margin Top 5</h1>')">Margin Top 5</a></h1>
 
         <br><br>
 
         <!-- ML & MR -->
-        <p><span class="bg-success mr-5">Margin Right 5</span> dolor sit amet, <span class="bg-success ml-3">Margin Left 3 </span> elit. Voluptatum, optio.</p>
+        <p><span class="bg-success mr-5"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Margin Right 5', '<p><span class=&quot;mr-5&quot;>Margin Right 5</span></p>')">Margin Right 5</a></span>
+        dolor sit amet, <span class="bg-success ml-3"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Margin Left 3', '<p><span class=&quot;mr-3&quot;>Margin Left 3</span></p>')">Margin Left 3 </a></span> elit. Voluptatum, optio.</p>
 
         <br><br>
 
         <!-- MX MARGIN LEFT RIGHT -->
-        <p>Lorem ipsum<span class="bg-success mx-5">Margin Left & Right 5</span>, consectetur elit. Voluptatum, optio.</p>
+        <p>Lorem ipsum<span class="bg-success mx-5"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Margin Left & Right 5', '<p><span class=&quot;mx-5&quot;>Margin Left & Right 5</span></p>')">Margin Left & Right 5</a></span>, consectetur elit. Voluptatum, optio.</p>
 
         <br><br>
 
         <!-- MY  MARGIN TOP BOTTOM -->
         <p>Lorem ipsum dolor sit amet, consectetur elit. Voluptatum, optio.</p>
-        <p class="bg-success my-5">Margin Top & Bottom 5</p>
+        <p class="bg-success my-5"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Margin Top & Bottom 5', '<p class=&quot;my-5&quot;>Margin Top & Bottom 5</p>')">Margin Top & Bottom 5</a></p>
         <p>Lorem ipsum dolor sit amet, consectetur elit. Voluptatum, optio.</p>
 
         <br><br>
 
         <!-- BLANK - ALL SIDES -->
         <p>Lorem ipsum dolor sit amet, consectetur elit. Voluptatum, optio.</p>
-        <p class="bg-success m-5">Margin All Sides 5</p>
+        <p class="bg-success m-5"<a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Margin All Sides 5', '<p class=&quot;m-5&quot;>Margin All Sides 5</p>')">Margin All Sides 5</a></p>
         <p>Lorem ipsum dolor sit amet, consectetur elit. Voluptatum, optio.</p>
 
         <br><br>
 
         <!-- PB PADDING BOTTOM -->
-        <h1 class="bg-success pb-0">Padding Bottom 0</h1>
-        <h1 class="bg-primary pb-1">Padding Bottom 1</h1>
-        <h1 class="bg-secondary pb-2">Padding Bottom 2</h1>
-        <h1 class="bg-info pb-3">Padding Bottom 3</h1>
-        <h1 class="bg-warning pb-4">Padding Bottom 4</h1>
-        <h1 class="bg-danger pb-5">Padding Bottom 5</h1>
+        <h1 class="bg-success pb-0"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Padding Bottom 0', '<div class=&quot;pb-0&quot;>Padding Bottom 0</div>')">Padding Bottom 0</a></h1>
+        <h1 class="bg-primary pb-1"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Padding Bottom 1', '<div class=&quot;pb-1&quot;>Padding Bottom 1</div>')">Padding Bottom 1</a></h1>
+        <h1 class="bg-secondary pb-2"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Padding Bottom 2', '<div class=&quot;pb-2&quot;>Padding Bottom 2</div>')">Padding Bottom 2</a></h1>
+        <h1 class="bg-info pb-3"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Padding Bottom 3', '<div class=&quot;pb-3&quot;>Padding Bottom 3</div>')">Padding Bottom 3</a></h1>
+        <h1 class="bg-warning pb-4"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Padding Bottom 4', '<div class=&quot;pb-4&quot;>Padding Bottom 4</div>')">Padding Bottom 4</a></h1>
+        <h1 class="bg-danger pb-5"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Padding Bottom 5', '<div class=&quot;pb-5&quot;>Padding Bottom 5</div>')">Padding Bottom 5</a></h1>
 
         <br><br>
 
          <!-- PT PADDING TOP -->
-        <h1 class="bg-success pt-0">Padding Top 0</h1>
-        <h1 class="bg-primary pt-1">Padding Top 1</h1>
-        <h1 class="bg-secondary pt-2">Padding Top 2</h1>
-        <h1 class="bg-info pt-3">Padding Top 3</h1>
-        <h1 class="bg-warning pt-4">Padding Top 4</h1>
-        <h1 class="bg-danger pt-5">Padding Top 5</h1>
+        <h1 class="bg-success pt-0"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Padding Top 0', '<div class=&quot;pt-0&quot;>Padding Top 0</div>')">Padding Top 0</a></h1>
+        <h1 class="bg-primary pt-1"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Padding Top 1', '<div class=&quot;pt-1&quot;>Padding Top 1</div>')">Padding Top 1</a></h1>
+        <h1 class="bg-secondary pt-2"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Padding Top 2', '<div class=&quot;pt-2&quot;>Padding Top 2</div>')">Padding Top 2</a></h1>
+        <h1 class="bg-info pt-3"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Padding Top 3', '<div class=&quot;pt-3&quot;>Padding Top 3</div>')">Padding Top 3</a></h1>
+        <h1 class="bg-warning pt-4"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Padding Top 4', '<div class=&quot;pt-4&quot;>Padding Top 4</div>')">Padding Top 4</a></h1>
+        <h1 class="bg-danger pt-5"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Padding Top 5', '<div class=&quot;pt-5&quot;>Padding Top 5</div>')">Padding Top 5</a></h1>
 
         <br><br>
 
         <!-- PL & PR -->
-        <p><span class="bg-success pr-5">Padding Right 5</span> dolor sit amet, <span class="bg-success pl-3">Padding Left 3 </span> elit. Voluptatum, optio.</p>
+        <p><span class="bg-success pr-5"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Padding Right 5', '<div class=&quot;pr-5&quot;>Padding Right 5</div>')">Padding Right 5</a></span> dolor sit amet,
+        <span class="bg-success pl-3"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Padding Left 3', '<div class=&quot;pt-3&quot;>Padding Left 3</div>')">Padding Left 3</a></span> elit. Voluptatum, optio.</p>
 
         <br><br>
 
         <!-- PX PADDING LEFT RIGHT -->
-        <p>Lorem ipsum<span class="bg-success px-5">Padding Left & Right 5</span>, consectetur elit. Voluptatum, optio.</p>
+        <p>Lorem ipsum<span class="bg-success px-5"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Padding Left & Right 5', '<div class=&quot;px-5&quot;>Padding Left & Right 5</div>')">Padding Left & Right 5</a></span>,
+        consectetur elit. Voluptatum, optio.</p>
 
         <br><br>
 
         <!-- PY  PADDING TOP BOTTOM -->
-        <p class="bg-success py-5">Padding Top & Bottom 5</p>
+        <p class="bg-success py-5"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Padding Top & Bottom 5', '<div class=&quot;py-5&quot;>Padding Top & Bottom 5</div>')">Padding Top & Bottom 5</a></p>
 
         <br><br>
 
         <!-- BLANK - ALL SIDES -->
-        <p class="bg-success p-5">Padding All Sides 5</p>
+        <p class="bg-success p-5"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Padding All Sides 5', '<div class=&quot;p-5&quot;>Padding All Sides 5</div>')">Padding All Sides 5</a></p>
 
         <!-- CENTER ALIGN -->
-        <div  class="mx-auto bg-success text-center" style="width: 200px;">
-          Center Align
+        <!-- mx-auto: maximum margin spacing to the right & left, creating a centering affect -->
+        <div  class="mx-auto bg-success text-center" style="width: 200px;"><a data-toggle="modal" data-target="#generateModal"
+        onClick="generateModal('Center Align Element', '<div class=&quot;mx-auto&quot; style=&quot;width: 200px;&quot;>Center Align Element</div>')">
+          Center Align</a>
         </div>
 
     </div><!-- ./container -->
     <div style="margin-top:500px;"></div>
+
+    <div include-html="htmlSnippet/generateModal.html"></div>
+    <script src="htmlSnippet/generateModal.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>

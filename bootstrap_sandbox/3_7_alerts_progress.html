@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet">
     <title>Bootstrap Sandbox</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
           <div class="row">
             <div class="col-md-3">
               <div class="dropdown">
-                  <button class="btn btn-primary btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                  <button class="btn btn-primary btn-block dropdown-toggle" data-toggle="dropdown" type="button">
                       2: Utilities
                   </button>
                   <div class="dropdown-menu">
@@ -83,42 +84,42 @@
         <!--########################START HERE#########################-->
 
         <!-- ALERTS -->
-        <div>
-          <strong>Primary</strong> Blog post added
+        <div class="alert alert-primary">
+          <strong>Primary</strong> Blog post added <a href="#" class="alert-link ml-5">Read More</a>
         </div>
 
-        <div>
+        <div class="alert alert-secondary">
           <strong>Secondary</strong> Blog post added
         </div>
 
-        <div>
+        <div class="alert alert-success">
             <strong>Success</strong> Blog post added
         </div>
 
-        <div>
+        <div class="alert alert-danger">
             <strong>Danger</strong> Please check the log files
         </div>
 
-        <div>
+        <div  class="alert alert-info">
             <strong>Info</strong> You have a new message
         </div>
 
-        <div>
+        <div class="alert alert-warning">
             <strong>Warning</strong> Please check the log files
         </div>
 
-        <div>
+        <div class="alert alert-light">
             <strong>Light</strong> Please check the log files
         </div>
 
-        <div>
+        <div class="alert alert-dark">
             <strong>Dark</strong> Please check the log files
         </div>
 
 
         <!-- DISMISSABLE ALERT -->
-        <div>
-            <button type="button">
+        <div class="alert alert-success alert-dismissable fade show">
+            <button class="close" data-dismiss="alert" type="button">
                 <span>&times;</span>
             </button>
             <strong>Dismissable</strong> Blog post added
@@ -127,33 +128,34 @@
         <br><br>
 
         <!-- PROGRESS BARS -->
-        <div>
-            <div></div>
+        <div class="progress">
+            <div class="progess progress-bar" style="width:25%;"></div>
         </div>
         <br>
-        <div>
-            <div></div>
+        <div class="progress">
+            <div class="progess progress-bar" style="width:35%;">35%</div>
         </div>
         <br>
-        <div>
-            <div></div>
+        <div class="progress">
+            <div class="progess progress-bar bg-success" style="width:55%;">55%</div>
         </div>
         <br>
-        <div>
-            <div></div>
+        <div class="progress">
+            <div class="progess progress-bar bg-info" style="width:65%;">65%</div>
         </div>
         <br>
-        <div>
-            <div></div>
+        <div class="progress">
+            <div class="progess progress-bar bg-warning" style="width:75%;">75%</div>
         </div>
         <br>
-        <div>
-            <div></div>
+        <div class="progress">
+            <div class="progess progress-bar progress-bar-striped bg-danger" style="width:85%;">85%</div>
         </div>
         <br>
-        <div>
-            <div></div>
+        <div class="progress">
+            <div class="progess progress-bar progress-bar-striped progress-bar-animated light-blue darken-1 pt-2 pb-4 w-100"><span class="animated flash infinite">Please Wait</span></div>
         </div>
+        <br>
 
     </div><!-- ./container -->
     <div style="margin-top:500px;"></div>

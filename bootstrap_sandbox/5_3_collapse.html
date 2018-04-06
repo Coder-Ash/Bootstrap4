@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet">
   <title>Bootstrap Sandbox</title>
 </head>
 <body>
@@ -82,55 +83,55 @@
     <!--########################START HERE#########################-->
 
     <!-- BUTTON WITH COLLAPSE -->
-    <button>Read More</button>
+    <button class="btn btn-primary d-block mb-4" data-toggle="collapse" data-target="#collapse-btn-1">Read More</button>
 
-    <div>
-      <div>
-        <div>
+    <div class="collapse mb-5" id="collapse-btn-1">
+      <div class="card">
+        <div class="card-body">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eius libero quisquam nobis explicabo vel non necessitatibus ipsum doloribus cupiditate voluptate recusandae quo autem error debitis, sed, minima repellendus commodi.
         </div>
       </div>
     </div>
 
     <!-- ACCORDION -->
-    <div>
-      <div>
-        <div>
-          <h5><a href="#">
+    <div id="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header" role="tab" id="heading1">
+          <h5 class="mb-0"><a id="toggler1" href="#collapse1" data-parent="#accordion" data-toggle="collapse">
             Collapse One
           </a></h5>
         </div>
 
-        <div>
-          <div>
+        <div id="collapse1" class="collapse">
+          <div class="card-body">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum architecto aut, recusandae totam ullam aperiam. Nesciunt expedita officiis animi quam corporis optio inventore facilis sint et nulla in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi nostrum officia, illo.
           </div>
         </div>
       </div>
 
-      <div>
-        <div>
-          <h5><a href="#">
+      <div class="card">
+        <div class="card-header" role="tab" id="heading2">
+          <h5 class="mb-0"><a id="toggler2" href="#collapse2" data-parent="#accordion" data-toggle="collapse">
             Collapse Two
           </a></h5>
         </div>
 
-        <div>
-          <div>
+        <div id="collapse2" class="collapse">
+          <div class="card-body">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum architecto aut, recusandae totam ullam aperiam. Nesciunt expedita officiis animi quam corporis optio inventore facilis sint et nulla in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi nostrum officia, illo.
           </div>
         </div>
       </div>
 
-      <div>
-        <div>
-          <h5><a href="#">
+      <div class="card">
+        <div class="card-header" role="tab" id="heading3">
+          <h5 class="mb-0"><a id="toggler3" href="#collapse3" data-parent="#accordion" data-toggle="collapse">
             Collapse Three
           </a></h5>
         </div>
 
-        <div>
-          <div>
+        <div id="collapse3" class="collapse">
+          <div class="card-body">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum architecto aut, recusandae totam ullam aperiam. Nesciunt expedita officiis animi quam corporis optio inventore facilis sint et nulla in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi nostrum officia, illo.
           </div>
         </div>
@@ -143,5 +144,55 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+  <script>
+    $("#toggler1").click(() => {
+      $("#heading1").addClass("bg-primary");
+      $("#toggler1").addClass("white-text");
+
+      $("#heading2").removeClass("bg-primary");
+      $("#toggler2").removeClass("white-text");
+
+      $("#heading3").removeClass("bg-primary");
+      $("#toggler3").removeClass("white-text");
+
+      if ($("#collapse1").hasClass("show")){
+        $("#heading1").removeClass("bg-primary");
+        $("#toggler1").removeClass("white-text");
+      }
+    });
+
+    $("#toggler2").click(() => {
+      $("#heading2").addClass("bg-primary");
+      $("#toggler2").addClass("white-text");
+
+      $("#heading1").removeClass("bg-primary");
+      $("#toggler1").removeClass("white-text");
+
+      $("#heading3").removeClass("bg-primary");
+      $("#toggler3").removeClass("white-text");
+
+      if ($("#collapse2").hasClass("show")){
+        $("#heading2").removeClass("bg-primary");
+        $("#toggler2").removeClass("white-text");
+      }
+    });
+
+    $("#toggler3").click(() => {
+      $("#heading3").addClass("bg-primary");
+      $("#toggler3").addClass("white-text");
+
+      $("#heading2").removeClass("bg-primary");
+      $("#toggler2").removeClass("white-text");
+
+      $("#heading1").removeClass("bg-primary");
+      $("#toggler1").removeClass("white-text");
+
+      if ($("#collapse3").hasClass("show")){
+        $("#heading3").removeClass("bg-primary");
+        $("#toggler3").removeClass("white-text");
+      }
+    });
+  </script>
 </body>
 </html>

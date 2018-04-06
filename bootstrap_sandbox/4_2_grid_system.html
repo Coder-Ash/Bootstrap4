@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet">
   <title>Bootstrap Sandbox</title>
 </head>
 <body>
@@ -82,83 +83,104 @@
     <!--########################START HERE#########################-->
 
     <!-- RESPONSIVE GRID -->
-    <div>
-      <div style="border:1px solid #333">
-        
+    <div class="row">
+      <div class="col text-center font-weight-bold" style="border:1px solid #333">Responsive Grid</div>
+    </div>
+    <div class="row">
+      <!--The style listed is to be ignored on actual projects.  THis is just to identify the columns clearly -->
+      <!-- The the column count has to equal 12 for a row -->
+      <!-- when the screen size goes below small it will stack the columns -->
+      <div class="col-sm-6 col-md-8 col-lg-4 col-xl-2" style="border:1px solid #333">
+        <ul>
+          <li>6 column on small & above screens</li>
+          <li>8 column / 4 column on medium & above screens</li>
+          <li>4 column / 8 column on large & above screens</li>
+          <li>2 column / 10 column on x-large & above screens</li>
+        </ul>
       </div>
-      <div style="border:1px solid #333">
-       
+      <div class="col-sm-6 col-md-4 col-lg-8 col-xl-10" style="border:1px solid #333">
+        <ul>
+          <li>6 column on small screen</li>
+          <li>8 column / 4 column on medium & above screens</li>
+          <li>4 column / 8 column on large & above screens</li>
+          <li>2 column / 10 column on x-large & above screens</li>
+        </ul>
       </div>
     </div>
 
     <!-- EQUAL WIDTH -->
-    <div>
-      <div style="border:1px solid #333">Equal Width</div>
-      <div style="border:1px solid #333">Equal Width</div>
-      <div style="border:1px solid #333">Equal Width</div>
+    <!-- Auto sets for equal width -->
+    <div class="row">
+      <div class="col" style="border:1px solid #333">Auto Equal Width</div>
+      <div class="col" style="border:1px solid #333">Auto Equal Width</div>
+      <div class="col" style="border:1px solid #333">Auto Equal Width</div>
     </div>
 
     <!-- EQUAL WIDTH MULTI ROW -->
-    <div>
-      <div style="border:1px solid #333">Equal Width Multi</div>
-      <div style="border:1px solid #333">Equal Width Multi</div>
-      <div style="border:1px solid #333"></div>
-      <div style="border:1px solid #333">Equal Width Multi</div>
-      <div style="border:1px solid #333">Equal Width Multi</div>
+    <div class="row">
+      <div class="col" style="border:1px solid #333">Equal Width Multi</div>
+      <div class="col" style="border:1px solid #333">Equal Width Multi</div>
+      <div class="w-100" style="border:1px solid #333"></div>
+      <div class="col" style="border:1px solid #333">Equal Width Multi</div>
+      <div class="col" style="border:1px solid #333">Equal Width Multi</div>
     </div>
 
     <!-- AUTO LAYOUT -->
-    <div>
-      <div style="border:1px solid #333">Auto Layout</div>
-      <div style="border:1px solid #333">Auto Layout</div>
-      <div style="border:1px solid #333">Auto Layout</div>
+    <!-- When you specifiy amount of columns for some divs, the div that's set to auto will adjust accordingly -->
+    <div class="row">
+      <div class="col" style="border:1px solid #333">Auto Layout</div>
+      <div class="col-6" style="border:1px solid #333">Auto Layout</div>
+      <div class="col-4" style="border:1px solid #333">Auto Layout</div>
     </div>
 
-    <!-- EQUAL WIDTH STACKED -->
-    <div>
-      <div style="border:1px solid #333">Equal Width Stack</div>
-      <div style="border:1px solid #333">Equal Width Stack</div>
-      <div style="border:1px solid #333">Equal Width Stack</div>
+    <!-- Responsive EQUAL WIDTH STACKED -->
+    <div class="row">
+      <div class="col-sm font-weight-bold" style="border:1px solid #333">Responsive Equal Width Stack</div>
+      <div class="col-sm font-weight-bold" style="border:1px solid #333">Responsive Equal Width Stack</div>
+      <div class="col-sm font-weight-bold" style="border:1px solid #333">Responsive Equal Width Stack</div>
     </div>
 
     <!-- ORDERING -->
     <div class="row">
       <div class="col order-3" style="border:1px solid #333">
-        First
+        First (Ordering)
       </div>
       <div class="col order-2" style="border:1px solid #333">
-        Second
+        Second (Ordering)
       </div>
       <div class="col order-1" style="border:1px solid #333">
-        Third
+        Third (Ordering)
       </div>
     </div>
 
     <!-- OFFSETTING -->
-    <div>
-      <div style="border:1px solid #333">4 col</div>
-      <div style="border:1px solid #333">4 col offset 4</div>
+    <div class="row">
+      <div class="col-md-4" style="border:1px solid #333">4 col</div>
+      <div class="col-md-4 ml-auto" style="border:1px solid #333">4 col offset 4</div>
     </div>
-    <div>
-      <div style="border:1px solid #333">3 col offset 3</div>
-      <div style="border:1px solid #333">3 col offset 3</div>
+    <div class="row">
+      <div class="col-md-3 ml-auto" style="border:1px solid #333">3 col offset 3</div>
+      <div class="col-md-3 ml-auto" style="border:1px solid #333">3 col offset 3</div>
     </div>
-    <div>
-      <div style="border:1px solid #333">6 col offset 3</div>
+    <div class="row">
+      <div class="col-md-6 mx-auto" style="border:1px solid #333">6 col offset 3</div>
     </div>
 
     <!-- NESTING -->
-    <div>
-      <div style="border:1px solid #333">
+    <div class="row">
+      <div class="col-sm-9" style="border:1px solid #333">
         Level 1: .col-sm-9
-        <div>
-          <div style="border:1px solid red">
+        <div class="row">
+          <div class="col-8 col-sm-6" style="border:1px solid red">
             Level 2: .col-8 .col-sm-6
           </div>
-          <div style="border:1px solid red">
+          <div class="col-4 col-sm-6" style="border:1px solid red">
             Level 2: .col-4 .col-sm-6
           </div>
         </div>
+      </div>
+      <div class="col-sm-3" style="border:1px solid #333">
+        Level 1: .col-sm-3
       </div>
     </div>
 
