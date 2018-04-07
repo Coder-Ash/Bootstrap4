@@ -83,10 +83,18 @@
       <div class="container">
         <!--########################START HERE#########################-->
 
-        <!-- ALERTS -->
-        <div class="alert alert-primary">
-          <strong>Primary</strong> Blog post added <a href="#" class="alert-link ml-5">Read More</a>
+        <div class="mx-auto" style="width: 320px;">
+          <button class="btn btn-primary mb-4" style="padding-left: 100px; padding-right: 100px;" data-toggle="modal" data-target="#alertMessages">Alert Messages</button>
         </div>
+        <!-- ALERTS -->
+
+        <div class="d-flex flex-row align-items-center">
+          <div class="alert alert-primary col-11">
+            <strong>Primary</strong> Blog post added <a href="#" class="alert-link align-alert-right">Read More</a>
+          </div>
+          <button type="button" data-toggle="modal" data-target="#alertMessagesWithLink" class="btn btn-primary px-1 col-lg col-xs-1" style="margin-top: -1em;">*</button>
+        </div>
+
 
         <div class="alert alert-secondary">
           <strong>Secondary</strong> Blog post added
@@ -118,16 +126,22 @@
 
 
         <!-- DISMISSABLE ALERT -->
-        <div class="alert alert-success alert-dismissable fade show">
-            <button class="close" data-dismiss="alert" type="button">
-                <span>&times;</span>
-            </button>
-            <strong>Dismissable</strong> Blog post added
+        <div class="d-flex flex-row align-items-center">
+          <div class="alert alert-success alert-dismissable fade show col-11">
+              <button class="close" data-dismiss="alert" type="button">
+                  <span>&times;</span>
+              </button>
+              <strong>Dismissable</strong> Blog post added
+          </div>
+          <button type="button" data-toggle="modal" data-target="#alertDismissableMessages" class="btn btn-success px-1 col-lg col-xs-1" style="margin-top: -1em;">*</button>
         </div>
 
         <br><br>
 
         <!-- PROGRESS BARS -->
+        <div class="mx-auto" style="width: 315px;">
+          <button class="btn btn-primary mb-4" style="padding-left: 100px; padding-right: 100px;" data-toggle="modal" data-target="#progressBars">Progress Bars</button>
+        </div>
         <div class="progress">
             <div class="progess progress-bar" style="width:25%;"></div>
         </div>
@@ -159,6 +173,64 @@
 
     </div><!-- ./container -->
     <div style="margin-top:500px;"></div>
+
+    <style>
+
+      @media (max-width:575px) {
+        .align-alert-right{
+          margin-left: 5em;
+        }
+      }
+
+      @media (min-width:576px) {
+        .align-alert-right{
+      	  margin-left: 10em;
+        }
+      }
+
+      /* Medium devices (tablets) */
+      @media (min-width:768px) {
+        .align-alert-right{
+      	  margin-left: 20em;
+        }
+      }
+
+      /* Large devices (desktops) */
+      @media (min-width:992px) {
+        .align-alert-right{
+      	  margin-left: 30em;
+        }
+      }
+
+      /* Extra large devices (large desktops) */
+      @media (min-width: 1200px) {
+        .align-alert-right{
+      	  margin-left: 42em;
+        }
+      }
+
+      @media (min-width: 1300px) {
+        .align-alert-right{
+      	  margin-left: 42em;
+        }
+      }
+
+      @media (min-width: 1400px) {
+        .align-alert-right{
+      	  margin-left: 42em;
+        }
+      }
+
+      @media (min-width: 1500px) {
+        .align-alert-right{
+      	  margin-left: 42em;
+        }
+      }
+    </style>
+
+    <link href="htmlSnippet/generateModal.css" rel="stylesheet">
+    <div include-html="htmlSnippet/alertsProgress.modal.html"></div>
+    <script src="htmlSnippet/generateModal.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>

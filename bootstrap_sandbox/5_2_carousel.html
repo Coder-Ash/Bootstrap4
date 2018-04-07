@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet">
   <title>Bootstrap Sandbox</title>
 </head>
 <body>
@@ -86,6 +86,7 @@
       <div class="col-sm-8 m-auto">
 
         <!-- SIMPLE SLIDER -->
+        <button class="btn btn-primary btn-block w-50 mb-4 mt-5" data-toggle="modal" data-target="#carouselSimple">Simple Carousel</button>
         <div id="slider1" class="carousel slide mb-5" data-ride="carousel">
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
@@ -101,6 +102,7 @@
         </div>
 
         <!-- SLIDER WITH CONTROLS -->
+        <button class="btn btn-primary btn-block w-50 mb-4 mt-5" data-toggle="modal" data-target="#carouselControls">Carousel Slider w/ Controls</button>
         <div id="slider2" class="carousel slide mb-5" data-ride="carousel">
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
@@ -122,6 +124,7 @@
       </div>
 
         <!-- SLIDER WITH INDICATORS -->
+        <button class="btn btn-primary btn-block w-50 mb-4 mt-5" data-toggle="modal" data-target="#carouselControlsIndicators">Carousel Slider w/ Controls & Indicators</button>
         <div id="slider3" class="carousel slide mb-5" data-ride="carousel">
           <ol class="carousel-indicators">
             <li class="active" data-target="#slider3" data-slide-to="0"></li>
@@ -148,6 +151,7 @@
         </div>
 
         <!-- SLIDER WITH CAPTIONS -->
+        <button class="btn btn-primary btn-block w-50 mb-4 mt-5" data-toggle="modal" data-target="#carouselControlsIndicatorsCaption">Carousel Slider w/ Controls, Indicators & Caption</button>
         <div id="slider4" class="carousel slide mb-5" data-ride="carousel">
           <ol class="carousel-indicators">
             <li class="active" data-target="#slider4" data-slide-to="0"></li>
@@ -190,6 +194,10 @@
 
 
   <div style="margin-top:500px;"></div>
+
+  <link href="htmlSnippet/generateModal.css" rel="stylesheet">
+  <div include-html="htmlSnippet/carousel.modal.html"></div>
+  <script src="htmlSnippet/generateModal.js"></script>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>

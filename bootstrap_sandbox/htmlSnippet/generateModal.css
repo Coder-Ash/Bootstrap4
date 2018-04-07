@@ -1,0 +1,50 @@
+
+
+
+/* Small devices (landscape phones) */
+@media (min-width:576px) {
+  .modal-custom{
+	width: 460px;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width:768px) {
+  .modal-custom{
+	width: 614px;
+  }
+}
+
+/* Large devices (desktops) */
+@media (min-width:992px) {
+  .modal-custom{
+	width: 800px;
+  }
+}
+
+/* Extra large devices (large desktops) */
+@media (min-width: 1200px) {
+  .modal-custom{
+	width: 960px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .modal-custom{
+	width: 1040px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .modal-custom{
+	width: 1120px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .modal-custom{
+	width: 1200px;
+  }
+}
+
+

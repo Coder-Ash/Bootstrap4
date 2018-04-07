@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet">
     <title>Bootstrap Sandbox</title>
 </head>
 <body>
@@ -83,6 +84,9 @@
         <!--########################START HERE#########################-->
 
         <!-- TABLE -->
+
+        <button class="btn btn-primary btn-block w-50 mb-4" data-toggle="modal" data-target="#table1">Table Design Code</button>
+
         <table class="table">
             <thead class="white-text indigo darken-1">
                 <tr>
@@ -115,6 +119,10 @@
         </table>
 
         <!-- INVERSE TABLE -->
+        <button class="btn grey btn-block mt-5 mb-4 w-50" data-toggle="modal" data-target="#tableInverse">
+          <span class="black-text font-weight-bold"> Inverse Table Design Code</span>
+        </button>
+
         <table class="table table-inverse">
             <thead>
                 <tr>
@@ -147,6 +155,9 @@
         </table>
 
         <!-- TABLE HEAD INVERSE -->
+        <button class="btn grey btn-block w-50 mt-5 mb-4" data-toggle="modal" data-target="#tableInverseHeader">
+          <span class="black-text font-weight-bold"> Table Inverse Header Design Code</span>
+        </button>
         <table class="table">
             <thead class="thead-inverse">
                 <tr>
@@ -179,6 +190,9 @@
         </table>
 
         <!-- STRIPED TABLE -->
+        <button class="btn grey btn-block w-50 mt-5 mb-4" data-toggle="modal" data-target="#tableInverseHeaderStripedBody">
+          <span class="black-text font-weight-bold">Table Inverse Header / Striped <br> Body Design Code</span>
+        </button>
         <table class="table table-striped">
             <thead class="thead-inverse">
                 <tr>
@@ -211,6 +225,7 @@
         </table>
 
         <!-- BORDERED TABLE -->
+        <button class="btn btn-secondary btn-block w-50 mt-5 mb-4" data-toggle="modal" data-target="#tableBordered">Bordered Table</button>
         <table class="table table-bordered">
             <thead>
                 <tr>
@@ -243,6 +258,9 @@
         </table>
 
         <!-- HOVERABLE -->
+        <button class="btn grey btn-block w-50 mt-5 mb-4" data-toggle="modal" data-target="#tableInverseHeaderHoverable">
+          <span class="black-text font-weight-bold"> Hoverable Table Inverse Header Design Code</span>
+        </button>
         <table class="table table-hover">
             <thead class="thead-inverse">
                 <tr>
@@ -275,6 +293,7 @@
         </table>
 
         <!-- SMALL TABLE -->
+        <button class="btn btn-danger btn-block w-50 mt-5 mb-4" data-toggle="modal" data-target="#tableSmall">Small Table Design Code</button>
         <table class="table table-sm">
             <thead>
                 <tr>
@@ -309,6 +328,7 @@
         <br><br>
 
         <!-- PAGINATION -->
+        <button class="btn btn-primary btn-block w-50 mt-5 mb-4" data-toggle="modal" data-target="#pagination">Pagination</button>
         <nav>
             <ul class="pagination">
                 <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
@@ -365,6 +385,10 @@
 
     </div><!-- ./container -->
     <div style="margin-top:500px;"></div>
+
+    <link href="htmlSnippet/generateModal.css" rel="stylesheet">
+    <div include-html="htmlSnippet/tables.modal.html"></div>
+    <script src="htmlSnippet/generateModal.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>

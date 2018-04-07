@@ -1,0 +1,145 @@
+<div id="collapse" class="modal">
+        <div class="modal-custom mx-auto">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold blue-text mx-auto">Collapse</h5>
+                    <button class="close" data-dismiss="modal"><span class="blue-text">&times;</span></button>
+                </div>
+                <div class="modal-body blue-grey-text font-weight-normal">
+                  <pre><code><span class="pln">
+		&lt;div class=&quot;container&quot;&gt;     
+			&lt;button class=&quot;btn btn-primary d-block mb-4&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#collapse-btn-1&quot;&gt;Read More&lt;/button&gt;
+			&lt;div class=&quot;collapse mb-5&quot; id=&quot;collapse-btn-1&quot;&gt;
+			  &lt;div class=&quot;card&quot;&gt;
+				&lt;div class=&quot;card-body&quot;&gt;
+				  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eius libero quisquam nobis explicabo vel non 
+				  necessitatibus ipsum doloribus cupiditate voluptate recusandae quo autem error debitis, sed, minima 
+				  repellendus commodi.
+				&lt;/div&gt;
+			  &lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;</span></code></pre>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+
+	
+	<div id="accordian" class="modal">
+        <div class="modal-custom mx-auto">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold blue-text mx-auto">Accordian</h5>
+                    <button class="close" data-dismiss="modal"><span class="blue-text">&times;</span></button>
+                </div>
+                <div class="modal-body blue-grey-text font-weight-normal">
+                  <pre><code><span class="pln">
+		&lt;div class=&quot;container&quot;&gt;        
+			&lt;div id=&quot;accordion&quot; role=&quot;tablist&quot;&gt;
+			  &lt;div class=&quot;card&quot;&gt;
+				&lt;div class=&quot;card-header&quot; role=&quot;tab&quot; id=&quot;heading1&quot;&gt;
+				  &lt;h5 class=&quot;mb-0&quot;&gt;&lt;a id=&quot;toggler1&quot; href=&quot;#collapse1&quot; data-parent=&quot;#accordion&quot; data-toggle=&quot;collapse&quot;&gt;
+					Collapse One
+				  &lt;/a&gt;&lt;/h5&gt;
+				&lt;/div&gt;
+
+				&lt;div id=&quot;collapse1&quot; class=&quot;collapse&quot;&gt;
+				  &lt;div class=&quot;card-body&quot;&gt;
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum architecto aut, recusandae totam ullam aperiam. Nesciunt expedita officiis animi quam corporis optio inventore facilis sint et nulla in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi nostrum officia, illo.
+				  &lt;/div&gt;
+				&lt;/div&gt;
+			  &lt;/div&gt;
+
+			  &lt;div class=&quot;card&quot;&gt;
+				&lt;div class=&quot;card-header&quot; role=&quot;tab&quot; id=&quot;heading2&quot;&gt;
+				  &lt;h5 class=&quot;mb-0&quot;&gt;&lt;a id=&quot;toggler2&quot; href=&quot;#collapse2&quot; data-parent=&quot;#accordion&quot; data-toggle=&quot;collapse&quot;&gt;
+					Collapse Two
+				  &lt;/a&gt;&lt;/h5&gt;
+				&lt;/div&gt;
+
+				&lt;div id=&quot;collapse2&quot; class=&quot;collapse&quot;&gt;
+				  &lt;div class=&quot;card-body&quot;&gt;
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum architecto aut, recusandae totam ullam aperiam. Nesciunt expedita officiis animi quam corporis optio inventore facilis sint et nulla in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi nostrum officia, illo.
+				  &lt;/div&gt;
+				&lt;/div&gt;
+			  &lt;/div&gt;
+
+			  &lt;div class=&quot;card&quot;&gt;
+				&lt;div class=&quot;card-header&quot; role=&quot;tab&quot; id=&quot;heading3&quot;&gt;
+				  &lt;h5 class=&quot;mb-0&quot;&gt;&lt;a id=&quot;toggler3&quot; href=&quot;#collapse3&quot; data-parent=&quot;#accordion&quot; data-toggle=&quot;collapse&quot;&gt;
+					Collapse Three
+				  &lt;/a&gt;&lt;/h5&gt;
+				&lt;/div&gt;
+
+				&lt;div id=&quot;collapse3&quot; class=&quot;collapse&quot;&gt;
+				  &lt;div class=&quot;card-body&quot;&gt;
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum architecto aut, recusandae totam ullam aperiam. Nesciunt expedita officiis animi quam corporis optio inventore facilis sint et nulla in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi nostrum officia, illo.
+				  &lt;/div&gt;
+				&lt;/div&gt;
+			  &lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		
+		&lt;script&gt;
+			$(&quot;#toggler1&quot;).click(() =&gt; {
+			  $(&quot;#heading1&quot;).addClass(&quot;bg-primary&quot;);
+			  $(&quot;#toggler1&quot;).addClass(&quot;white-text&quot;);
+
+			  $(&quot;#heading2&quot;).removeClass(&quot;bg-primary&quot;);
+			  $(&quot;#toggler2&quot;).removeClass(&quot;white-text&quot;);
+
+			  $(&quot;#heading3&quot;).removeClass(&quot;bg-primary&quot;);
+			  $(&quot;#toggler3&quot;).removeClass(&quot;white-text&quot;);
+
+			  if ($(&quot;#collapse1&quot;).hasClass(&quot;show&quot;)){
+				$(&quot;#heading1&quot;).removeClass(&quot;bg-primary&quot;);
+				$(&quot;#toggler1&quot;).removeClass(&quot;white-text&quot;);
+			  }
+			});
+
+			$(&quot;#toggler2&quot;).click(() =&gt; {
+			  $(&quot;#heading2&quot;).addClass(&quot;bg-primary&quot;);
+			  $(&quot;#toggler2&quot;).addClass(&quot;white-text&quot;);
+
+			  $(&quot;#heading1&quot;).removeClass(&quot;bg-primary&quot;);
+			  $(&quot;#toggler1&quot;).removeClass(&quot;white-text&quot;);
+
+			  $(&quot;#heading3&quot;).removeClass(&quot;bg-primary&quot;);
+			  $(&quot;#toggler3&quot;).removeClass(&quot;white-text&quot;);
+
+			  if ($(&quot;#collapse2&quot;).hasClass(&quot;show&quot;)){
+				$(&quot;#heading2&quot;).removeClass(&quot;bg-primary&quot;);
+				$(&quot;#toggler2&quot;).removeClass(&quot;white-text&quot;);
+			  }
+			});
+
+			$(&quot;#toggler3&quot;).click(() =&gt; {
+			  $(&quot;#heading3&quot;).addClass(&quot;bg-primary&quot;);
+			  $(&quot;#toggler3&quot;).addClass(&quot;white-text&quot;);
+
+			  $(&quot;#heading2&quot;).removeClass(&quot;bg-primary&quot;);
+			  $(&quot;#toggler2&quot;).removeClass(&quot;white-text&quot;);
+
+			  $(&quot;#heading1&quot;).removeClass(&quot;bg-primary&quot;);
+			  $(&quot;#toggler1&quot;).removeClass(&quot;white-text&quot;);
+
+			  if ($(&quot;#collapse3&quot;).hasClass(&quot;show&quot;)){
+				$(&quot;#heading3&quot;).removeClass(&quot;bg-primary&quot;);
+				$(&quot;#toggler3&quot;).removeClass(&quot;white-text&quot;);
+			  }
+			});
+		&lt;/script&gt;
+		
+		</span></code></pre>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	

@@ -1,0 +1,244 @@
+<div id="gridResponsive" class="modal">
+        <div class="modal-custom mx-auto">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold blue-text mx-auto">Responsive Grid</h5>
+                    <button class="close" data-dismiss="modal"><span class="blue-text">&times;</span></button>
+                </div>
+                <div class="modal-body blue-grey-text font-weight-normal">
+                  <pre><code><span class="pln">
+		&lt;div class=&quot;container&quot;&gt;        
+			&lt;div class=&quot;row&quot;&gt;
+			  &lt;!--The style listed is to be ignored on actual projects.  THis is just to identify the columns clearly --&gt;
+			  &lt;!-- The the column count has to equal 12 for a row --&gt;
+			  &lt;!-- when the screen size goes below small it will stack the columns --&gt;
+			  &lt;div class=&quot;col-sm-6 col-md-8 col-lg-4 col-xl-2&quot; style=&quot;border:1px solid #333&quot;&gt;
+				&lt;ul&gt;
+				  &lt;li&gt;6 column on small & above screens&lt;/li&gt;
+				  &lt;li&gt;8 column / 4 column on medium & above screens&lt;/li&gt;
+				  &lt;li&gt;4 column / 8 column on large & above screens&lt;/li&gt;
+				  &lt;li&gt;2 column / 10 column on x-large & above screens&lt;/li&gt;
+				&lt;/ul&gt;
+			  &lt;/div&gt;
+			  &lt;div class=&quot;col-sm-6 col-md-4 col-lg-8 col-xl-10&quot; style=&quot;border:1px solid #333&quot;&gt;
+				&lt;ul&gt;
+				  &lt;li&gt;6 column on small screen&lt;/li&gt;
+				  &lt;li&gt;8 column / 4 column on medium & above screens&lt;/li&gt;
+				  &lt;li&gt;4 column / 8 column on large & above screens&lt;/li&gt;
+				  &lt;li&gt;2 column / 10 column on x-large & above screens&lt;/li&gt;
+				&lt;/ul&gt;
+			  &lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;</span></code></pre>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+
+	<div id="gridEqualWidth" class="modal">
+        <div class="modal-lg mx-auto">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold blue-text mx-auto">Grid w/ Equal Width</h5>
+                    <button class="close" data-dismiss="modal"><span class="blue-text">&times;</span></button>
+                </div>
+                <div class="modal-body blue-grey-text font-weight-normal">
+                  <pre><code><span class="pln">
+	&lt;div class=&quot;container&quot;&gt;        
+		&lt;div class=&quot;row&quot;&gt;
+		  &lt;div class=&quot;col&quot; style=&quot;border:1px solid #333&quot;&gt;Auto Equal Width&lt;/div&gt;
+		  &lt;div class=&quot;col&quot; style=&quot;border:1px solid #333&quot;&gt;Auto Equal Width&lt;/div&gt;
+		  &lt;div class=&quot;col&quot; style=&quot;border:1px solid #333&quot;&gt;Auto Equal Width&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;</span></code></pre>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
+	<div id="gridEqualWidthMultiRow" class="modal">
+        <div class="modal-lg mx-auto">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold blue-text mx-auto">Grid w/ Equal Width & Multiple Rows</h5>
+                    <button class="close" data-dismiss="modal"><span class="blue-text">&times;</span></button>
+                </div>
+                <div class="modal-body blue-grey-text font-weight-normal">
+                  <pre><code><span class="pln">
+	&lt;div class=&quot;container&quot;&gt;        
+		&lt;div class=&quot;row&quot;&gt;
+		  &lt;div class=&quot;col&quot; style=&quot;border:1px solid #333&quot;&gt;Auto Equal Width&lt;/div&gt;
+		  &lt;div class=&quot;col&quot; style=&quot;border:1px solid #333&quot;&gt;Auto Equal Width&lt;/div&gt;
+		  &lt;div class=&quot;w-100&quot; style=&quot;border:1px solid #333&quot;&gt;&lt;/div&gt;
+		  &lt;div class=&quot;col&quot; style=&quot;border:1px solid #333&quot;&gt;Auto Equal Width&lt;/div&gt;
+		  &lt;div class=&quot;col&quot; style=&quot;border:1px solid #333&quot;&gt;Auto Equal Width&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;</span></code></pre>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<div id="gridAutoCustom" class="modal">
+        <div class="modal-lg mx-auto">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold blue-text mx-auto">Grid Auto Mixed w/ Custom Layouts</h5>
+                    <button class="close" data-dismiss="modal"><span class="blue-text">&times;</span></button>
+                </div>
+                <div class="modal-body blue-grey-text font-weight-normal">
+                  <pre><code><span class="pln">
+	&lt;div class=&quot;container&quot;&gt;        
+		&lt;!-- When you specifiy amount of columns for some divs, the div that's set --&gt;
+		&lt;!-- to auto will adjust accordingly --&gt;
+		&lt;div class=&quot;row&quot;&gt;
+		  &lt;div class=&quot;col&quot; style=&quot;border:1px solid #333&quot;&gt;Auto Layout&lt;/div&gt;
+		  &lt;div class=&quot;col-6&quot; style=&quot;border:1px solid #333&quot;&gt;Custom Layout&lt;/div&gt;
+		  &lt;div class=&quot;col-5&quot; style=&quot;border:1px solid #333&quot;&gt;Custom Layout&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;</span></code></pre>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	
+	<div id="gridEqualWidthResponsiveStacked" class="modal">
+        <div class="modal-custom mx-auto">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold blue-text mx-auto">Responsive Grid w/ Equal Width - Stacked (Screen Unspecified)</h5>
+                    <button class="close" data-dismiss="modal"><span class="blue-text">&times;</span></button>
+                </div>
+                <div class="modal-body blue-grey-text font-weight-normal">
+                  <pre><code><span class="pln">
+		&lt;div class=&quot;container&quot;&gt;        
+			&lt;div class=&quot;row&quot;&gt;
+			  &lt;div class=&quot;col-sm font-weight-bold&quot; style=&quot;border:1px solid #333&quot;&gt;Responsive Equal Width Stack&lt;/div&gt;
+			  &lt;div class=&quot;col-sm font-weight-bold&quot; style=&quot;border:1px solid #333&quot;&gt;Responsive Equal Width Stack&lt;/div&gt;
+			  &lt;div class=&quot;col-sm font-weight-bold&quot; style=&quot;border:1px solid #333&quot;&gt;Responsive Equal Width Stack&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;</span></code></pre>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
+	
+	<div id="gridOrdering" class="modal">
+        <div class="modal-lg mx-auto">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold blue-text mx-auto">Ordering Grid</h5>
+                    <button class="close" data-dismiss="modal"><span class="blue-text">&times;</span></button>
+                </div>
+                <div class="modal-body blue-grey-text font-weight-normal">
+                  <pre><code><span class="pln">
+		&lt;div class=&quot;container&quot;&gt;        
+			&lt;div class=&quot;row&quot;&gt;
+			  &lt;div class=&quot;col order-3&quot; style=&quot;border:1px solid #333&quot;&gt;
+				First (Ordering)
+			  &lt;/div&gt;
+			  &lt;div class=&quot;col order-2&quot; style=&quot;border:1px solid #333&quot;&gt;
+				Second (Ordering)
+			  &lt;/div&gt;
+			  &lt;div class=&quot;col order-1&quot; style=&quot;border:1px solid #333&quot;&gt;
+				Third (Ordering)
+			  &lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;</span></code></pre>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+
+	<div id="gridOffset" class="modal">
+        <div class="modal-custom mx-auto">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold blue-text mx-auto">Offsetting Grid</h5>
+                    <button class="close" data-dismiss="modal"><span class="blue-text">&times;</span></button>
+                </div>
+                <div class="modal-body blue-grey-text font-weight-normal">
+                  <pre><code><span class="pln">
+			&lt;div class=&quot;container&quot;&gt;        
+				&lt;div class=&quot;row&quot;&gt;
+				  &lt;div class=&quot;col-md-4&quot; style=&quot;border:1px solid #333&quot;&gt;4 col&lt;/div&gt;
+				  &lt;div class=&quot;col-md-4 ml-auto&quot; style=&quot;border:1px solid #333&quot;&gt;4 col offset 4&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;row&quot;&gt;
+				  &lt;div class=&quot;col-md-3 ml-auto&quot; style=&quot;border:1px solid #333&quot;&gt;3 col offset 3&lt;/div&gt;
+				  &lt;div class=&quot;col-md-3 ml-auto&quot; style=&quot;border:1px solid #333&quot;&gt;3 col offset 3&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;row&quot;&gt;
+				  &lt;div class=&quot;col-md-6 mx-auto&quot; style=&quot;border:1px solid #333&quot;&gt;6 col offset 3&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;</span></code></pre>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+
+	
+	
+	<div id="gridNesting" class="modal">
+        <div class="modal-lg mx-auto">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold blue-text mx-auto">Nesting Grid</h5>
+                    <button class="close" data-dismiss="modal"><span class="blue-text">&times;</span></button>
+                </div>
+                <div class="modal-body blue-grey-text font-weight-normal">
+                  <pre><code><span class="pln">
+		&lt;div class=&quot;container&quot;&gt;        
+			&lt;div class=&quot;row&quot;&gt;
+			  &lt;div class=&quot;col-sm-9&quot; style=&quot;border:1px solid #333&quot;&gt;
+				Level 1: .col-sm-9
+				&lt;div class=&quot;row&quot;&gt;
+				  &lt;div class=&quot;col-8 col-sm-6&quot; style=&quot;border:1px solid red&quot;&gt;
+					Level 2: .col-8 .col-sm-6
+				  &lt;/div&gt;
+				  &lt;div class=&quot;col-4 col-sm-6&quot; style=&quot;border:1px solid red&quot;&gt;
+					Level 2: .col-4 .col-sm-6
+				  &lt;/div&gt;
+				&lt;/div&gt;
+			  &lt;/div&gt;
+			  &lt;div class=&quot;col-sm-3&quot; style=&quot;border:1px solid #333&quot;&gt;
+				Level 1: .col-sm-3
+			  &lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;</span></code></pre>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	

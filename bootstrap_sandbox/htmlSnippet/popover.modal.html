@@ -1,0 +1,146 @@
+<div id="popovers" class="modal">
+        <div class="modal-custom mx-auto">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold blue-text mx-auto">Popovers (All Sides)</h5>
+                    <button class="close" data-dismiss="modal"><span class="blue-text">&times;</span></button>
+                </div>
+                <div class="modal-body blue-grey-text font-weight-normal">
+                  <pre><code><span class="pln">
+		&lt;div class=&quot;container&quot;&gt;        
+			&lt;button class=&quot;btn btn-danger&quot; data-toggle=&quot;popover&quot; data-placement=&quot;top&quot; title=&quot;Popover Title&quot;
+			  data-content=&quot;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&quot;&gt;
+				Toggle popover
+			  &lt;/button&gt;
+
+			  &lt;button class=&quot;btn btn-primary&quot; data-toggle=&quot;popover&quot; data-placement=&quot;right&quot; title=&quot;Popover Title&quot;
+			  data-content=&quot;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&quot;&gt;
+				Toggle popover
+			  &lt;/button&gt;
+
+			  &lt;button class=&quot;btn btn-info&quot; data-toggle=&quot;popover&quot; data-placement=&quot;left&quot; title=&quot;Popover Title&quot;
+			  data-content=&quot;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&quot;&gt;
+				Toggle popover
+			  &lt;/button&gt;
+
+			  &lt;button class=&quot;btn btn-warning&quot; data-toggle=&quot;popover&quot; data-placement=&quot;bottom&quot; title=&quot;Popover Title&quot;
+			  data-content=&quot;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&quot;&gt;
+				Toggle popover
+			&lt;/button&gt;
+		&lt;/div&gt;
+		
+		
+	&lt;script&gt;
+	
+		// Init Popovers
+		$('[data-toggle=&quot;popover&quot;]').popover();	
+		
+	&lt;/script&gt;
+		</span></code></pre>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+
+	
+	<div id="popoverDismissible" class="modal">
+        <div class="modal-custom mx-auto">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold blue-text mx-auto">Dismissible Popover</h5>
+                    <button class="close" data-dismiss="modal"><span class="blue-text">&times;</span></button>
+                </div>
+                <div class="modal-body blue-grey-text font-weight-normal">
+                  <pre><code><span class="pln">
+		&lt;div class=&quot;container&quot;&gt;        
+			&lt;button id=&quot;dismissible&quot; class=&quot;btn btn-secondary&quot; data-toggle=&quot;popover&quot; data-placement=&quot;top&quot; title=&quot;Popover Title&quot;
+			data-content=&quot;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&quot; data-trigger=&quot;focus&quot;&gt;
+			  Toggle popover
+			&lt;/button&gt;		
+		&lt;/div&gt;
+		
+		
+		&lt;script&gt;
+		
+			// Init Popovers
+			$('[data-toggle=&quot;popover&quot;]').popover();	
+			
+		&lt;/script&gt;
+		</span></code></pre>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+
+	
+	<div id="popoverJS" class="modal">
+        <div class="modal-custom mx-auto">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold blue-text mx-auto">Trigger Popover w/ Javascript</h5>
+                    <button class="close" data-dismiss="modal"><span class="blue-text">&times;</span></button>
+                </div>
+                <div class="modal-body blue-grey-text font-weight-normal">
+                  <pre><code><span class="pln">
+		&lt;div class=&quot;container&quot;&gt;   
+			&lt;button id=&quot;dismissible&quot; class=&quot;btn btn-secondary&quot; data-toggle=&quot;popover&quot; data-placement=&quot;top&quot; title=&quot;Popover Title&quot;
+			data-content=&quot;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&quot; data-trigger=&quot;focus&quot;&gt;
+			  Toggle popover
+			&lt;/button&gt;		
+			
+			&lt;button class=&quot;btn btn-dark&quot; onClick=&quot;showPopover()&quot;&gt;Show Popover&lt;/button&gt;
+			&lt;button class=&quot;btn btn-light&quot; onClick=&quot;hidePopover()&quot;&gt;Hide Popover&lt;/button&gt;
+			&lt;button class=&quot;btn grey&quot; onClick=&quot;togglePopover()&quot;&gt;Toggle Popover&lt;/button&gt;
+		&lt;/div&gt;
+			
+			
+			&lt;script&gt;
+				// Init Popovers
+				$('[data-toggle="popover"]').popover();
+
+				function showPopover(){
+				  $('#dismissible').popover('show');
+				}
+
+				function hidePopover(){
+				  $('#dismissible').popover('hide');
+				}
+
+				function togglePopover(){
+				  $('#dismissible').popover('toggle');
+				}
+
+				//Popover Events
+				$('#dismissible').on('show.bs.popover', () => {
+				  console.log("Popover Show")
+				});
+
+				$('#dismissible').on('shown.bs.popover', () => {
+				  console.log("Popover Shown")
+				});
+
+				$('#dismissible').on('hide.bs.popover', () => {
+				  console.log("Popover Hide")
+				});
+
+				$('#dismissible').on('hidden.bs.popover', () => {
+				  console.log("Popover hidden")
+				})
+			&lt;/script&gt;
+		</span></code></pre>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	
