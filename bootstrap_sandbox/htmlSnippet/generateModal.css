@@ -19,6 +19,8 @@
 @media (min-width:992px) {
   .modal-custom{
 	width: 800px;
+  overflow-y: scroll;
+  max-height:85%;
   }
 }
 
@@ -26,25 +28,31 @@
 @media (min-width: 1200px) {
   .modal-custom{
 	width: 960px;
+  overflow-y: scroll;
+  max-height:85%;
   }
 }
 
 @media (min-width: 1300px) {
   .modal-custom{
 	width: 1040px;
+  overflow-y: scroll;
+  max-height:85%;
   }
 }
 
 @media (min-width: 1400px) {
   .modal-custom{
 	width: 1120px;
+  overflow-y: scroll;
+  max-height:85%;
   }
 }
 
 @media (min-width: 1500px) {
   .modal-custom{
 	width: 1200px;
+  overflow-y: scroll;
+  max-height:85%;
   }
 }
-
-
