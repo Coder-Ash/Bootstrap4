@@ -4,14 +4,20 @@
 /* Small devices (landscape phones) */
 @media (min-width:576px) {
   .modal-custom{
-	width: 460px;
+  width: 460px;
+  overflow-y: scroll;
+  max-height:85%;
+  }
   }
 }
 
 /* Medium devices (tablets) */
 @media (min-width:768px) {
   .modal-custom{
-	width: 614px;
+  width: 614px;
+  overflow-y: scroll;
+  max-height:85%;
+  }
   }
 }
 
